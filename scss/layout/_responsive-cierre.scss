@@ -1,0 +1,44 @@
+@use '../utilities/mixins' as m;
+
+.content-container {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.hero-grid-section,
+.features-grid,
+.projects-grid-layout {
+  > * {
+    min-inline-size: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-header.navbar {
+    padding-inline: 0.35rem;
+  }
+
+  .navbar .brand-container {
+    gap: 0.4rem;
+    margin-inline-end: 0;
+    white-space: normal;
+  }
+
+  .navbar .brand-logo {
+    height: 32px;
+  }
+
+  .navbar .brand-title {
+    font-size: 1rem;
+  }
+
+  .navbar .brand-subtitle {
+    font-size: 0.7rem;
+  }
+}
+
+@include m.respond-up('md') {
+  .navbar-collapse {
+    min-inline-size: 0;
+  }
+}
