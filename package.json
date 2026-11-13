@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "build": "sass scss/main.scss styles/styles.css --style=expanded",
-    "sass:watch": "sass --watch scss/main.scss styles/styles.css"
+    "sass:watch": "sass --watch scss/main.scss styles/styles.css",
+    "build:site": "npm run build && node scripts/publicar.mjs"
   },
   "browserslist": [
     "defaults"
