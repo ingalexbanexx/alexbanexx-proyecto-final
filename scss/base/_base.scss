@@ -13,3 +13,22 @@ body.site-body {
   display: flex;
   flex-direction: column;
 }
+
+.skip-link {
+  position: fixed;
+  inset: 0 auto auto 1rem;
+  z-index: 1100;
+  transform: translateY(-120%);
+  padding: 0.5rem 0.75rem;
+  background: v.$color-bg-base;
+  color: v.$color-text-main;
+
+  &:focus {
+    transform: translateY(0);
+    outline: 2px solid v.$color-primary;
+  }
+}
+
+#contenido {
+  scroll-margin-top: 6rem;
+}

@@ -1,0 +1,15 @@
+@media (prefers-reduced-motion: reduce) {
+  .site-body *,
+  .site-body *::before,
+  .site-body *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html:not(.aos-activo) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+}
